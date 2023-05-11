@@ -39,9 +39,15 @@ Instead of adding a service class to the providers[]  array in AppModule , you c
 ```ts
 1.	@Injectable({providedIn: 'root'})
 2.	export class MyService { ... }
+```
+```ts
 This is exactly the same as:
+```
+```ts
 1.	export class MyService { ... }
+```
 and
+```ts
 1.	import { MyService } from './path/to/my.service';
 2.	 
 3.	@NgModule({
